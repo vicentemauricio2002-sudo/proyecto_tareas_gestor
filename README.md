@@ -37,9 +37,9 @@ proyecto_tareas_gestor/
 │       │     └── responsive.css
 │       ├── js/
 │       │    └── script.js
-│       ├── img/
-│       │    └── logo.pn
-│       │  
-│       └── fonts/
+│       └── img/
+│            └── logoTEC-UCT_azulSinFondo
+│         
+│       
 └── docs/
      └── uso_ia.md
