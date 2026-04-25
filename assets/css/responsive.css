@@ -1,0 +1,43 @@
+@media (max-width: 768px) {
+    
+    header, form, main, footer {
+        width: 95%;
+        padding: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tablero {
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+    .columna {
+        width: 100%;
+        min-height: auto; 
+        padding-bottom: 20px;
+    }
+
+    .columna h2 {
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+    }
+
+    form button {
+        max-width: 100%;
+        margin-top: 30px;
+        height: 45px;
+    }
+
+    form textarea, form select, form input {
+        max-width: 100%;
+    }
+
+    header nav ul {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 10px;
+    }
+}

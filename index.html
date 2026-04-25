@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de tareas</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <img id="logoTEC-UCT" src="assets/img/logoTEC-UCT_azulSinFondo.png" alt="LogoTEC-UCT">
+        <nav>
+            <ul>
+                <li><a href="#formularioNuevaTarea">Creador de tareas</a></li>
+                <li><a href="#tableroKanban">Tablero Kanban</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form id="formularioNuevaTarea" onsubmit="AgregarNuevaTarea(event)">
+        <h1>Creador de tareas</h1>
+        <p>Aquí puedes crear nuevas tareas, las cuales encontrarás en la sección "Pendientes" del tablero Kanban.</p>
+
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" required></textarea> 
+        
+        <label for="prioridad">Prioridad:</label>  
+        <select id="prioridad" required>  
+            <option value="">Seleccionar...</option>  
+            <option value="alta">Alta</option>  
+            <option value="media">Media</option>  
+            <option value="baja">Baja</option>  
+        </select>
+        
+        <label for="fecha">Fecha límite:</label>  
+        <input type="date" id="fecha" required> 
+        
+        <button type="submit">Agregar Nueva Tarea</button>  
+    </form>
+
+    <main id="tableroKanban">
+        <h1>Tablero Kanban</h1>
+        <p>¡Todas tus tareas!</p>
+        <div class="tablero">
+            <div class="columna" id="pendientes">  
+                <h2>Pendientes <span class="contador">0</span></h2>  
+                <div class="tareas-container" id="todoContainer"></div> 
+            </div>
+
+            <div class="columna" id="en-progreso">  
+                <h2>En Progreso <span class="contador">0</span></h2>  
+                <div class="tareas-container" id="doingContainer"></div>
+            </div>  
+            
+            <div class="columna" id="completadas">  
+                <h2>Completadas <span class="contador">0</span></h2>  
+                <div class="tareas-container" id="doneContainer"></div>  
+            </div> 
+        </div>
+    </main>
+
+    <footer id="contacto">
+        <h1>Contacto</h1>
+        <p>Si tienes dudas o sugerencias, escríbenos aquí.</p><br>
+        <p class="bold">📧 vortiz2025@alu.uct.cl</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

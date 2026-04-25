@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #1c70b8;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+p{
+    margin-block-start: 0px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+h1{
+    margin-bottom: 25px;
+}
+
+header, form, main, footer{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 15);
+    border-radius: 15px;
+    background-color: white;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+}
+
+main{
+    align-items: stretch;
+}
+
+#logoTEC-UCT{
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    padding-left: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #1c70b8;
+    font-weight: 600;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+header {
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+
+}
+
+header nav ul li a:hover {
+    color: #f1c40f;
+}
+
+form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+form textarea{
+    max-width: 1000px;
+    max-height: 250px;
+}
+
+form select{
+    max-width: 138px;
+}
+
+form input{
+    max-width: 130px;
+}
+
+form button{
+    max-width: 110px;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #ADD8E6;
+}
+
+.tablero{
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.columna{
+    text-align: center;
+    flex: 1;
+    border: 5px solid;
+    border-radius: 15px;
+    min-height: 800px;
+    padding: 10px;
+}
+
+#pendientes{
+    border-color: #3b82f6;
+}
+
+#pendientes h2{
+    color: #3b82f6;
+}
+
+#en-progreso{
+    border-color: #f59e0b;
+}
+
+#en-progreso h2{
+    color: #f59e0b;
+}
+
+#completadas{
+    border-color: #10b981;
+}
+
+#completadas h2{
+    color: #10b981;
+}
+
+.columna h2{
+    margin-bottom: 30px;
+}
+
+.tarea{
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px; /* Separación entre tareas */
+    text-align: left;    /* Texto a la izquierda para mejor lectura */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: transform 0.2s;
+}
+
+.tarea:hover {
+    transform: translateY(-3px); /* Efecto sutil al pasar el mouse */
+}
+
+.tarea button {
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.tarea button:hover {
+    background-color: #ADD8E6;
+}
