@@ -38,8 +38,8 @@ proyecto_tareas_gestor/
 │       ├── js/
 │       │    └── script.js
 │       ├── img/
-│       │    ├── logo.pn
-│       │    └── favicon.ico
+│       │    └── logo.pn
+│       │  
 │       └── fonts/
 └── docs/
      └── uso_ia.md
